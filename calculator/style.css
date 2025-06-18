@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #333d47; 
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 280px; 
+    box-sizing: border-box; 
+}
+
+.display-area {
+    background-color: #c9d6c7;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px; 
+    text-align: right;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.model-info {
+    font-size: 9px; 
+    color: #555;
+    margin-bottom: 3px; 
+    text-align: left;
+}
+
+.display {
+    font-size: 36px; 
+    color: #333;
+    min-height: 36px; 
+    overflow-x: auto;
+    white-space: nowrap;
+    letter-spacing: -1.5px; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 8px; 
+}
+
+button {
+    background-color: #2c343b; 
+    color: #fff;
+    border: none;
+    padding: 18px 0; 
+    font-size: 22px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: #3f4a56;
+}
+
+.orange-btn {
+    background-color: #e57200; 
+    color: #fff;
+    font-size: 16px; 
+}
+
+.orange-btn:hover {
+    background-color: #ff8500;
+}
+
+.operator {
+    
+    background-color: #e57200;
+}
+
+.operator:hover {
+    background-color: #ff8500;
+}
+
+.zero-button {
+    grid-column: span 2; 
+}
+
+
+.span-two {
+    grid-column: span 2;
+}
