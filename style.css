@@ -1,0 +1,471 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fa;
+    color: #333;
+   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: auto; 
+    overflow: hidden;
+    padding: 20px 0; 
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+.main-header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    border-bottom: 3px solid #007bff;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.main-header .logo {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.main-nav ul li {
+    margin-left: 25px; 
+}    
+.main-nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px; 
+    transition: border-bottom 0.3s ease; 
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800/2980b9/ffffff?text=Landing+Page+Hero') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; 
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+
+.features-section {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.feature-item {
+    flex: 1; 
+    min-width: 280px; 
+    max-width: 350px; 
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); 
+}
+
+.feature-item .icon {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+
+.about-section {
+    background: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section h3 {
+    font-size: 2.5em;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1em;
+}
+
+
+.main-footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto; 
+    border-top: 3px solid #007bff;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.main-footer p {
+    margin: 0;
+    color: #bbb;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; 
+    }
+
+    .hero-section h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .feature-grid {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .feature-item {
+        margin-bottom: 20px; 
+        width: 90%; 
+        max-width: 400px;
+    }
+
+    .main-footer .container {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+}
+
+.about-us-page-section,
+.contact-page-section {
+    padding: 80px 0; 
+    background-color: #f4f7fa;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.about-us-page-section h1,
+.contact-page-section h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.about-us-page-section h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.about-us-page-section p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 0 auto 15px; 
+    color: #555;
+}
+
+.about-us-page-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto 30px auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.about-us-page-section ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%23007bff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    background-size: 18px 18px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.team-member h4 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.team-member .role {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left; 
+}
+
+.contact-info, .contact-form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-info h2, .contact-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #007bff;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex; 
+    align-items: center;
+}
+
+.contact-info .icon-small {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-right: 10px;
+    width: 20px; 
+    text-align: center;
+}
+
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form .btn {
+    width: auto; 
+    margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .about-us-page-section h1,
+    .contact-page-section h1 {
+        font-size: 2.2em;
+    }
+    .about-us-page-section h2,
+    .contact-page-section h2 {
+        font-size: 1.8em;
+    }
+    .team-grid, .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member, .contact-info, .contact-form-container {
+        width: 90%;
+        max-width: 450px;
+    }
+}
